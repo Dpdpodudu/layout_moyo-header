@@ -1,3 +1,58 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 50px;
+  background-color: white;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.nav__link:hover {
+  color: #00acdc;
+}
+
+.nav__link.blue {
+  color: #00acdc;
+}
+
+.border {
+  position: absolute;
+  bottom: 0; /* Прижали максимально вниз */
+  left: 0;
+  right: 0;
+  height: 4px; /* Высота из макета */
+  background-color: #00acdc;
+  border-radius: 8px; /* Скругление из макета */
 }
